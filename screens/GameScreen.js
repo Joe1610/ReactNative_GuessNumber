@@ -5,6 +5,7 @@ import NumberContainer from '../components/game/NumberContainer';
 import PrimaryButton from '../components/ui/PrimaryButton';
 import Card from '../components/ui/Card';
 import InstructionText from '../components/ui/InstructionText';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 const generateRandomNumber = (min, max, exclude) => {
   const randomNumber = Math.floor(Math.random() * (max - min)) + min;
@@ -58,8 +59,9 @@ const GameScreen = ({userNumber, onGameOver}) => {
         </InstructionText>
         <View style={styles.buttonsContainer}>
           <View style={styles.buttonContainer}>
-            <PrimaryButton
-              onPress={nextGuessHandler.bind(this, 'lower')}></PrimaryButton>
+            <PrimaryButton onPress={nextGuessHandler.bind(this, 'lower')}>
+              <Icon name="remove" size={24} color="white" />
+            </PrimaryButton>
           </View>
           <View style={styles.buttonContainer}>
             <PrimaryButton onPress={nextGuessHandler.bind(this, 'greater')}>
