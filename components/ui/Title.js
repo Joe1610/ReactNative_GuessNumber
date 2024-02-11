@@ -10,6 +10,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 24,
     fontWeight: 'bold',
+    // fontFamily: 'OpenSans-Bold',
     color: 'white',
     textAlign: 'center',
     borderWidth: 2,
