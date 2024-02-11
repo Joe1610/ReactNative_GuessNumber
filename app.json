@@ -1,4 +1,5 @@
 {
   "name": "ReactNative_GuessNumber",
-  "displayName": "ReactNative_GuessNumber"
+  "displayName": "ReactNative_GuessNumber",
+  "orientation": "default"
 }
